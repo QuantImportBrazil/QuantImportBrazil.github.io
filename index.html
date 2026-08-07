@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Sobre a QuantImport e seus canais de contato.">
+  <meta name="description" content="QuantImport: inteligência preditiva para o planejamento estratégico no agronegócio.">
   <meta name="theme-color" content="#146b45">
-  <title>Sobre | QuantImport</title>
+  <title>QuantImport | Inteligência para o Agronegócio</title>
   <style>
     :root {
-      --verde: #146b45; --verde-escuro: #0d4931; --dourado: #c8a52b;
+      --verde: #146b45; --verde-escuro: #0d4931; --vinho: #7f1734; --dourado: #c8a52b;
       --texto: #20262d; --texto-suave: #667085; --borda: #e3e8e5;
       --fundo: #f4f7f5; --branco: #ffffff; --largura: 1180px;
     }
@@ -19,28 +19,32 @@
     .topo { color: var(--branco); background: linear-gradient(110deg, var(--verde-escuro), var(--verde));
       border-bottom: 4px solid var(--dourado); }
     .topo-conteudo, main, .rodape-conteudo { width: min(var(--largura), calc(100% - 48px)); margin-inline: auto; }
-    .topo-conteudo { padding: 22px 0 28px; }
+    .topo-conteudo { padding: 22px 0 58px; }
     .marca-linha { display: flex; align-items: center; justify-content: space-between; gap: 24px; }
     .marca { display: inline-flex; align-items: center; gap: 12px; color: var(--branco);
       text-decoration: none; font-size: 1.45rem; font-weight: 700; }
     .marca img { display: block; width: 46px; height: 46px; object-fit: contain; border-radius: 50%; }
     .navegacao { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 8px 20px; }
     .navegacao a { color: var(--branco); text-underline-offset: 4px; }
-    .identificacao { margin-top: 28px; }
-    .identificacao h1 { margin: 0; font-size: clamp(2.2rem, 5vw, 4rem); line-height: 1; }
-    .identificacao p { margin: 10px 0 0; color: #e6f2eb; }
-    main { padding: 26px 0 48px; }
-    .conteudo { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+    .apresentacao { max-width: 780px; margin-top: 54px; }
+    .apresentacao h1 { margin: 0; font-size: clamp(2.4rem, 6vw, 4.8rem); line-height: 1.02; }
+    .apresentacao p { margin: 18px 0 0; color: #e6f2eb; font-size: clamp(1.05rem, 2vw, 1.3rem); }
+    .acoes { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+    .botao { display: inline-block; padding: 11px 17px; border: 1px solid var(--branco); border-radius: 6px;
+      color: var(--branco); text-decoration: none; font-weight: 700; }
+    .botao.principal { color: var(--verde-escuro); background: var(--branco); }
+    main { padding: 38px 0 52px; }
+    .introducao { max-width: 820px; margin-bottom: 24px; }
+    .introducao h2 { margin: 0 0 8px; color: var(--verde-escuro); font-size: 1.75rem; }
+    .introducao p { margin: 0; }
+    .cartoes { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
     .cartao { padding: 24px; background: var(--branco); border: 1px solid var(--borda);
       border-radius: 10px; box-shadow: 0 4px 16px rgba(16,24,40,.06); }
-    .cartao h2 { margin: 0 0 10px; color: var(--verde-escuro); font-size: 1.3rem; }
+    .cartao h3 { margin: 0 0 10px; color: var(--verde-escuro); font-size: 1.25rem; }
     .cartao p { margin: 0; }
-    .cartao a { color: var(--verde); font-weight: 700; text-underline-offset: 4px;
-      overflow-wrap: anywhere; }
-    .cartao a:hover, .cartao a:focus-visible { color: var(--verde-escuro); }
+    .cartao a { color: var(--verde); font-weight: 700; text-underline-offset: 4px; }
     footer { color: var(--texto-suave); background: var(--branco); border-top: 1px solid var(--borda); }
-    .rodape-conteudo { display: flex; justify-content: space-between; gap: 20px;
-      padding: 24px 0; font-size: .92rem; }
+    .rodape-conteudo { display: flex; justify-content: space-between; gap: 20px; padding: 24px 0; font-size: .92rem; }
     .rodape-conteudo p { margin: 0; }
     @media (max-width: 680px) {
       .topo-conteudo, main, .rodape-conteudo { width: min(100% - 24px, var(--largura)); }
@@ -53,36 +57,43 @@
   <header class="topo">
     <div class="topo-conteudo">
       <div class="marca-linha">
-        <a class="marca" href="/pages/">
-          <img src="https://quantimportbrazil.github.io/quantimport-assets/assets/brand/logo.png" alt="Logotipo QuantImport">
+        <a class="marca" href="/">
+          <img src="/assets/brand/logo.png" alt="Logotipo QuantImport">
           <span>QuantImport</span>
         </a>
         <nav class="navegacao" aria-label="Navegação principal">
-          <a href="/pages/">Publicações</a>
+          <a href="/sobre/">Sobre</a>
+          <a href="/pages/">Demonstrações</a>
         </nav>
       </div>
-      <div class="identificacao">
-        <h1>Sobre</h1>
-        <p>Inteligência para o Agronegócio</p>
+      <div class="apresentacao">
+        <h1>Inteligência preditiva para o agronegócio</h1>
+        <p>Uma plataforma de previsões quantitativas do comércio exterior agrícola para apoiar o planejamento estratégico.</p>
+        <div class="acoes">
+          <a class="botao principal" href="/pages/">Explorar demonstrações</a>
+          <a class="botao" href="/sobre/">Conhecer a QuantImport</a>
+        </div>
       </div>
     </div>
   </header>
 
   <main>
-    <div class="conteudo">
+    <section class="introducao">
+      <h2>O que a QuantImport entrega</h2>
+      <p>Previsões organizadas por produto, território e período, abrangendo importações e exportações conforme a relevância de cada recorte para o planejamento.</p>
+    </section>
+    <div class="cartoes">
       <section class="cartao">
-        <h2>QuantImport</h2>
-        <p>A plataforma está sendo reformulada para tornar suas análises e publicações ainda mais acessíveis.</p>
+        <h3>Produto e território</h3>
+        <p>Análises por país de origem ou destino, unidade aduaneira, unidade federativa e município, conforme a disponibilidade e a viabilidade das previsões.</p>
       </section>
-
       <section class="cartao">
-        <h2>Publicações</h2>
-        <p>Consulte as <a href="/pages/">publicações preliminares</a> disponíveis.</p>
+        <h3>Comparação de métodos</h3>
+        <p>Aprendizado de máquina e regressão linear são comparados com resultados reais de períodos anteriores. Os gráficos apresentam intervalos baseados nos erros observados.</p>
       </section>
-
       <section class="cartao">
-        <h2>Contato</h2>
-        <p>Envie uma mensagem para <a href="mailto:andre.bueno@quantimport.com.br">andre.bueno@quantimport.com.br</a>.</p>
+        <h3>Níveis de análise</h3>
+        <p>As publicações demonstrativas oferecem uma seleção condensada de previsões. A organização por produto, território e período permite navegar do panorama aos recortes disponíveis.</p>
       </section>
     </div>
   </main>
@@ -90,7 +101,7 @@
   <footer>
     <div class="rodape-conteudo">
       <p><strong>QuantImport — Inteligência para o Agronegócio</strong></p>
-      <p><a href="mailto:andre.bueno@quantimport.com.br">andre.bueno@quantimport.com.br</a></p>
+      <p><a href="/pages/">Demonstrações e publicações</a></p>
     </div>
   </footer>
 </body>
