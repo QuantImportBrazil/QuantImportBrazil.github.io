@@ -32,6 +32,11 @@
     .apresentacao { max-width: 780px; margin-top: 54px; }
     .apresentacao h1 { margin: 0; font-size: clamp(2.4rem, 6vw, 4.8rem); line-height: 1.02; }
     .apresentacao p { margin: 18px 0 0; color: #e6f2eb; font-size: clamp(1.05rem, 2vw, 1.3rem); }
+    .acoes { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+    .botao { display: inline-block; padding: 11px 17px; border: 1px solid var(--branco); border-radius: 6px;
+      color: var(--branco); background: rgba(255,255,255,.1); text-decoration: none; font-weight: 700; }
+    .botao.principal { color: var(--verde-escuro); background: var(--branco); }
+    .botao:hover, .botao:focus-visible { color: var(--verde-escuro); background: #e6f2eb; }
     footer { color: var(--texto-suave); background: var(--branco); border-top: 1px solid var(--borda); }
     .rodape-conteudo { display: flex; justify-content: space-between; gap: 20px; padding: 24px 0; font-size: .92rem; }
     .rodape-conteudo p { margin: 0; }
@@ -58,6 +63,10 @@
       <div class="apresentacao">
         <h1>Inteligência preditiva para o agronegócio</h1>
         <p>Uma plataforma de previsões quantitativas do comércio exterior para apoiar o planejamento estratégico do agronegócio.</p>
+        <div class="acoes">
+          <a class="botao principal" href="/pages/">Publicações</a>
+          <a class="botao" href="/sobre/">Sobre</a>
+        </div>
       </div>
     </div>
   </header>
