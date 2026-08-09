@@ -25,7 +25,10 @@
       text-decoration: none; font-size: 1.45rem; font-weight: 700; }
     .marca img { display: block; width: 46px; height: 46px; object-fit: contain; border-radius: 50%; }
     .navegacao { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 8px 20px; }
-    .navegacao a { color: var(--branco); text-underline-offset: 4px; }
+    .navegacao a { display: inline-block; padding: 9px 14px; border: 1px solid rgba(255,255,255,.8);
+      border-radius: 6px; color: var(--branco); background: rgba(255,255,255,.1);
+      text-decoration: none; font-weight: 700; text-underline-offset: 4px; }
+    .navegacao a:hover, .navegacao a:focus-visible { color: var(--verde-escuro); background: var(--branco); }
     .apresentacao { max-width: 780px; margin-top: 54px; }
     .apresentacao h1 { margin: 0; font-size: clamp(2.4rem, 6vw, 4.8rem); line-height: 1.02; }
     .apresentacao p { margin: 18px 0 0; color: #e6f2eb; font-size: clamp(1.05rem, 2vw, 1.3rem); }
